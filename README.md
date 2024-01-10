@@ -1,4 +1,4 @@
-### Entertainment Hub 🍿📚
+## Entertainment Hub 🍿📚
 
 Welcome to Entertainment Hub, your one-stop destination for a seamless and enjoyable entertainment experience! This MERN stack application brings together the power of MongoDB, Express.js, React.js, and Node.js to deliver a feature-packed platform for movie enthusiasts.
 
