@@ -7,7 +7,7 @@ const LandingPage = () => {
 
   const checkUsersAuthStatus = async () => {
     // Verifying the user
-    await fetch("http://localhost:8080/api/user/verify-user", {
+    await fetch("https://entertainment-app-server.onrender.com/api/user/verify-user", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
       withCredentials: true,

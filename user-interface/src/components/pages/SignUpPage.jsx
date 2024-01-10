@@ -24,7 +24,7 @@ const SignUpPage = () => {
 
   // Checking the user's auth status
   const checkUsersAuthStatus = async () => {
-    await fetch("http://localhost:8080/api/user/verify-user", {
+    await fetch("https://entertainment-app-server.onrender.com/api/user/verify-user", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
       withCredentials: true,
@@ -66,7 +66,7 @@ const SignUpPage = () => {
       });
     } else {
       setIsLoading((prev) => !prev);
-      await fetch("http://localhost:8080/api/user/signup", {
+      await fetch("https://entertainment-app-server.onrender.com/api/user/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(userDetails),

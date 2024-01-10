@@ -17,7 +17,7 @@ const BookmarkPage = () => {
   const GetBookmarkedMovies = async () => {
     const email = JSON.parse(localStorage.getItem("userEmail"));
     await fetch(
-      `http://localhost:8080/api/user/get-all-bookmarks/${email}`
+      `https://entertainment-app-server.onrender.com/api/user/get-all-bookmarks/${email}`
     )
       .then((res) => res.json())
       .then((movie) => {
@@ -40,7 +40,7 @@ const BookmarkPage = () => {
   const DeleteBooking = async (id, type) => {
     const email = JSON.parse(localStorage.getItem("userEmail"));
     await fetch(
-      `http://localhost:8080/api/user/delete-bookmark/${type}/${email}/${id}`,
+      `https://entertainment-app-server.onrender.com/api/user/delete-bookmark/${type}/${email}/${id}`,
       {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },

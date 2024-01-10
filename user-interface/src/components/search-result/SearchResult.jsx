@@ -19,7 +19,7 @@ const SearchResult = ({
   const DeleteBooking = async (movieId, type) => {
     const email = JSON.parse(localStorage.getItem("userEmail"));
     await fetch(
-      `http://localhost:8080/api/user/delete-bookmark/${type}/${email}/${movieId}`,
+      `https://entertainment-app-server.onrender.com/api/user/delete-bookmark/${type}/${email}/${movieId}`,
       {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },

@@ -31,7 +31,7 @@ const MovieDetailsPage = () => {
 
     // Bookmarking Movies
     if (movie.title) {
-      await fetch("http://localhost:8080/api/user/bookmark-movie", {
+      await fetch("https://entertainment-app-server.onrender.com/api/user/bookmark-movie", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -52,7 +52,7 @@ const MovieDetailsPage = () => {
 
     // Bookmarking TV series
     if (movie.original_name) {
-      await fetch("http://localhost:8080/api/user/bookmark-movie", {
+      await fetch("https://entertainment-app-server.onrender.com/api/user/bookmark-movie", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

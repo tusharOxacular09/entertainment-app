@@ -8,7 +8,7 @@ const UserLogout = ({ setShowUserDetails }) => {
   return (
     <p
       onClick={async () => {
-        await fetch("http://localhost:8080/api/user/logout", {
+        await fetch("https://entertainment-app-server.onrender.com/api/user/logout", {
           method: "GET",
           headers: { "Content-Type": "application/json" },
           withCredentials: true,

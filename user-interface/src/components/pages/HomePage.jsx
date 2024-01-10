@@ -59,7 +59,7 @@ const HomePage = () => {
   // Bookmark a movie
   const BookmarkMovie = async (movie) => {
     const email = JSON.parse(localStorage.getItem("userEmail"));
-    await fetch("http://localhost:8080/api/user/bookmark-movie", {
+    await fetch("https://entertainment-app-server.onrender.com/api/user/bookmark-movie", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

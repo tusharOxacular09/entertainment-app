@@ -6,7 +6,7 @@ import { toast } from "react-hot-toast";
 const RootPage = () => {
   const navigate = useNavigate();
   const checkUsersAuthStatus = async () => {
-    await fetch("http://localhost:8080/api/user/verify-user", {
+    await fetch("https://entertainment-app-server.onrender.com/api/user/verify-user", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
       withCredentials: true,

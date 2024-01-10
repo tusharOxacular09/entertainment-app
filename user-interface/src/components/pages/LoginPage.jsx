@@ -14,7 +14,7 @@ const LoginPage = () => {
   const navigate = useNavigate();
 
   const checkUsersAuthStatus = async () => {
-    await fetch("http://localhost:8080/api/user/verify-user", {
+    await fetch("https://entertainment-app-server.onrender.com/api/user/verify-user", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
       withCredentials: true,
@@ -52,7 +52,7 @@ const LoginPage = () => {
       });
     } else {
       setIsLoading((prev) => !prev);
-      await fetch("http://localhost:8080/api/user/login", {
+      await fetch("https://entertainment-app-server.onrender.com/api/user/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         withCredentials: true,
