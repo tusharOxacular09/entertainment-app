@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["https://entertainmenthub-tushar-kanta09.onrender.com"],
+    origin: ["https://entertainmenthub-tushar09.onrender.com"],
     credentials: true,
   })
 );
