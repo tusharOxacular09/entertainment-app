@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: ["https://entertainmenthub-tushar09.onrender.com"],
+    origin: ["https://entertainmenthub-tushar09.onrender.com", "https://deepika-pandey-entertainment-app.onrender.com"],
     credentials: true,
   })
 );
